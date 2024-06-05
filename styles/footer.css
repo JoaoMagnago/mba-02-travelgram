@@ -1,0 +1,13 @@
+footer {
+  display: flex;
+  gap: 24px;
+  padding-block: 24px;
+}
+
+/* 
+  Careful when using nth-child, for it references all childs of parent component. 
+  If there was another element before the first span, it would be the nth-child(1).
+*/
+footer span:nth-child(1) { 
+  margin-right: auto;
+}
